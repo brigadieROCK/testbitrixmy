@@ -1,0 +1,25 @@
+{
+    "name": "hex/example",
+    "description": "example package",
+    "autoload": {
+        "psr-4": {
+            "Hex\\Example\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brigadier",
+            "email": "petraevvladimirmailru@mail.ru"
+        }
+    ],
+    "require": {
+		"wikimedia/composer-merge-plugin": "dev-master"
+	},
+	"extra": {
+		"merge-plugin": {
+			"require": [
+				"../../bitrix/composer-bx.json"
+			]
+		}
+	}
+}
